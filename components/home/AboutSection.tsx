@@ -4,7 +4,7 @@ import perfilYes from '@/public/perfil-yes.png';
 
 export default function AboutSection() {
     return (
-        <section className="relative overflow-hidden border-b-2 border-espresso bg-mostaza px-4 py-28 md:py-40">
+        <section id="sobre-mi" className="relative overflow-hidden border-b-2 border-espresso bg-mostaza px-4 py-28 md:py-40 scroll-mt-20">
             <span className="pointer-events-none absolute right-[10%] top-16 text-5xl text-pink/25" aria-hidden="true">✦</span>
             <div className="mx-auto grid max-w-6xl gap-10 rounded-[2rem] border-2 border-espresso bg-surface p-7 shadow-bento md:grid-cols-[0.8fr_1.2fr] md:gap-16 md:p-14">
                 <div className="relative min-h-[280px] overflow-hidden rounded-[1.5rem] border-2 border-espresso md:min-h-[410px]">

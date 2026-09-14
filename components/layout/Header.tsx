@@ -28,6 +28,12 @@ export default function Header() {
               Inicio
             </Link>
             <Link 
+              href="/#sobre-mi" 
+              className="text-xs uppercase tracking-widest text-espresso/80 hover:text-pink font-semibold transition-colors"
+            >
+              Sobre mí
+            </Link>
+            <Link 
               href="/servicios" 
               className="text-xs uppercase tracking-widest text-espresso/80 hover:text-pink font-semibold transition-colors"
             >
@@ -38,12 +44,6 @@ export default function Header() {
               className="text-xs uppercase tracking-widest text-espresso/80 hover:text-pink font-semibold transition-colors"
             >
               Diseños
-            </Link>
-            <Link 
-              href="/sobre-mi" 
-              className="text-xs uppercase tracking-widest text-espresso/80 hover:text-pink font-semibold transition-colors"
-            >
-              Sobre mí
             </Link>
           </nav>
 
