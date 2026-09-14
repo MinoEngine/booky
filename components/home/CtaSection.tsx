@@ -19,7 +19,7 @@ export default function CtaSection() {
             Reservar Cita
           </Link>
           <a
-            href="https://wa.me/"
+            href="https://wa.me/+584125133567"
             target="_blank"
             rel="noreferrer"
             className="rounded-full border-2 border-espresso bg-mostaza px-8 py-4 text-xs font-bold uppercase tracking-widest text-espresso shadow-bento transition-all hover:-translate-y-0.5 hover:bg-bgMain"
