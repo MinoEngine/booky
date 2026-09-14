@@ -26,7 +26,7 @@ export default function HeroSection() {
               Reservar Cita
             </Link>
             <Link
-              href="https://wa.me/+584125133567"
+              href="https://wa.me/"
               className="rounded-full border-2 border-espresso bg-bgMain px-8 py-4 text-center text-xs font-bold uppercase tracking-widest text-espresso shadow-bento transition-all hover:-translate-y-0.5 hover:bg-mostaza"
             >
               Contáctame
