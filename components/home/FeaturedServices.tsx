@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { ArrowRight, Clock3, Sparkles } from 'lucide-react';
 import { MOCK_SERVICES } from '@/data/mockData';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function FeaturedServices() {
   const featured = MOCK_SERVICES.filter((s) => s.featured).slice(0, 3);
 
@@ -22,7 +24,12 @@ export default function FeaturedServices() {
         {featured.map((service) => (
           <article key={service.id} className="group flex flex-col overflow-hidden rounded-[1.5rem] border-2 border-espresso bg-surface shadow-bento transition-transform hover:-translate-y-1">
             <div className="relative h-48 w-full border-b-2 border-espresso md:h-56">
-              <Image src={service.image} alt={service.name} fill className="object-cover" />
+              <Image 
+                src={`${basePath}${service.image}`} 
+                alt={service.name} 
+                fill 
+                className="object-cover" 
+              />
               <span className="absolute left-4 top-4 rounded-full border-2 border-espresso bg-mostaza px-3 py-1 text-[9px] font-bold uppercase tracking-[0.15em] text-espresso">Recomendado</span>
             </div>
             <div className="flex flex-grow flex-col justify-between space-y-5 p-6">

@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { ArrowRight, Heart } from 'lucide-react';
 import { MOCK_DESIGNS } from '@/data/mockData';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function FeaturedGallery() {
   const designs = MOCK_DESIGNS.slice(0, 4);
 
@@ -24,7 +26,7 @@ export default function FeaturedGallery() {
       <div className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-5">
         {designs.map((d, index) => (
           <Link key={d.id} href={`/disenos/${d.id}`} className={`group relative ${index % 2 === 0 ? 'h-64 md:h-80' : 'h-56 md:mt-10 md:h-72'} overflow-hidden rounded-[1.25rem] border-2 border-espresso shadow-bento`}>
-            <Image src={d.image} alt={d.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+            <Image src={`${basePath}${d.image}`} alt={d.title} fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
             <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-espresso/85 via-espresso/10 to-transparent p-4">
               <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-mostaza">{d.category}</span>
               <span className="mt-1 text-sm font-bold text-white">{d.title}</span>
