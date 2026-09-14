@@ -1,3 +1,5 @@
+// data/mockData.ts
+
 export interface Service {
   id: string;
   name: string;
@@ -31,8 +33,8 @@ export const MOCK_SERVICES: Service[] = [
     name: 'Extensión Gel',
     price: 25,
     duration: '90 min',
-    description: '...',
-    image: '/booky/gel-1.png', // Agregado /booky
+    description: 'Si tienes uñas cortas y deseas un alargamiento inmediato ocuparemos el producto que tu uña requiera, este puede ser gel de construcción o polygel sobre tip.',
+    image: '/booky/gel-1.png',
     featured: true,
   },
   {
@@ -40,8 +42,8 @@ export const MOCK_SERVICES: Service[] = [
     name: 'Revestimiento en Gel',
     price: 20,
     duration: '90 min',
-    description: '...',
-    image: '/booky/gel-2.png', // Agregado /booky
+    description: 'Uñas naturales medianas-largas. Un recubrimiento más rígido, ideal si quieres mantener el largo actual sin que se rompan, con una durabilidad de 3 semanas a mas.',
+    image: '/booky/gel-2.png',
     featured: true,
   },
   {
@@ -49,8 +51,8 @@ export const MOCK_SERVICES: Service[] = [
     name: 'Nivelación y Brillo',
     price: 18,
     duration: '90 min',
-    description: '...',
-    image: '/booky/gel-3.png', // Agregado /booky
+    description: 'Uñas naturales cortas a medianas (Base Rubber). Corrige imperfecciones y fortalece tu uña natural con una estructura flexible y una duración de 21 días a más.',
+    image: '/booky/gel-3.png',
     featured: true,
   },
   {
@@ -58,8 +60,8 @@ export const MOCK_SERVICES: Service[] = [
     name: 'Revestimiento en POLYGEL',
     price: 22,
     duration: '90 min',
-    description: '...',
-    image: '/booky/gel-4.png', // Agregado /booky
+    description: 'Uñas naturales medianas-largas. Refuerzo de alta resistencia para máxima protección contra golpes y una durabilidad de 3 a 4 semanas.',
+    image: '/booky/gel-4.png',
     featured: false,
   },
   {
@@ -67,39 +69,40 @@ export const MOCK_SERVICES: Service[] = [
     name: 'Pedicura estética SPA',
     price: 13,
     duration: '90 min',
-    description: '...',
-    image: '/booky/pedicure.png', // Agregado /booky
+    description: 'Incluye limpieza profesional, exfoliación. Esmaltado en gel e hidratación.',
+    image: '/booky/pedicure.png',
     featured: false,
   },
 ];
 
+// 2. Galería de Diseños
 export const MOCK_DESIGNS: Design[] = [
   {
     id: 'd1',
     title: 'Minimalist Gold Accents',
     category: 'Nail Art',
-    image: '/booky/tinte.png', // Agregado /booky
+    image: '/booky/tinte.png',
     featured: true,
   },
   {
     id: 'd2',
     title: 'French Ombré Velvet',
     category: 'Soft Gel',
-    image: '/booky/tinte2.png', // Agregado /booky
+    image: '/booky/tinte2.png',
     featured: true,
   },
   {
     id: 'd3',
     title: 'Ethereal Pearl Finish',
     category: 'Editorial',
-    image: '/booky/tinte3.png', // Agregado /booky
+    image: '/booky/tinte3.png',
     featured: true,
   },
   {
     id: 'd4',
     title: 'pink Flow Line',
     category: 'Nail Art',
-    image: '/booky/tinte4.png', // Agregado /booky
+    image: '/booky/tinte4.png',
     featured: true,
   },
 ];
