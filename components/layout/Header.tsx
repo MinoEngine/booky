@@ -89,6 +89,13 @@ export default function Header() {
               Inicio
             </Link>
             <Link 
+              href="/#sobre-mi" 
+              onClick={() => setIsOpen(false)}
+              className="py-1 text-sm font-semibold uppercase tracking-widest text-espresso"
+            >
+              Sobre mí
+            </Link>
+            <Link 
               href="/servicios" 
               onClick={() => setIsOpen(false)}
               className="border-b border-espresso/20 py-1 text-sm font-semibold uppercase tracking-widest text-espresso"
@@ -102,13 +109,7 @@ export default function Header() {
             >
               Diseños
             </Link>
-            <Link 
-              href="/sobre-mi" 
-              onClick={() => setIsOpen(false)}
-              className="py-1 text-sm font-semibold uppercase tracking-widest text-espresso"
-            >
-              Sobre mí
-            </Link>
+            
           </nav>
         </div>
       )}
